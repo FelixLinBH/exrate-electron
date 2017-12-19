@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="匯率,換匯,台幣,美金,美元,日幣,日圓,港幣,歐元">   
+    <meta name="description" content="匯率即時查詢">
+    <meta content="追匯站- 匯率- 即時銀行匯率查詢" property="og:title">
+    <meta content="銀行匯率即時查詢" property="og:description">
+    <title>追匯站- 匯率- 即時銀行匯率查詢</title>
+    <link href="build/css/all.min.css" rel="stylesheet">
+    <link rel="icon" tpye="image/x-icon" href="/favicon.ico">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-paper-plane"></i> <span class="light">追匯站</span> 
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+               
+                    <!-- <li>
+                        <a class="page-scroll" href="#about">立即追蹤</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">服務項目</a>
+                    </li> -->
+                    <!-- <li>
+                        <a class="page-scroll" href="#about">關於</a>
+                    </li> -->
+                    <!-- <li>
+                        <a class="page-scroll" href="#contact">聯絡我們</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <div id="particles-js" class="particles-header"></div>
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="select-table">
+                            <div class="row-flag">
+                                <div class="item select" data-item="usd">
+                                    <div class="icon-USD icon-div"></div>
+                                    <div class="label">美金</div>
+                                </div>
+                                
+                                <div class="item" data-item="hkd">
+                                    <div class="icon-HKD icon-div"></div>
+                                    <div class="label">港幣</div>
+                                </div>
+                                <div class="item" data-item="gbp">
+                                    <div class="icon-GBP icon-div"></div>
+                                    <div class="label">英鎊</div>
+                                </div>
+                                <div class="item " data-item="aud">
+                                    <div class="icon-AUD icon-div"></div>
+                                    <div class="label">澳幣</div>
+                                </div>
+                                <div class="item " data-item="cad">
+                                    <div class="icon-CAD icon-div"></div>
+                                    <div class="label">加拿大</div>
+                                </div>
+                                <div class="item " data-item="sgd">
+                                    <div class="icon-SGD icon-div"></div>
+                                    <div class="label">新加坡</div>
+                                </div>
+                                <div class="item " data-item="chf">
+                                    <div class="icon-CHF icon-div"></div>
+                                    <div class="label">瑞士法郎</div>
+                                </div>
+                                <div class="item " data-item="jpy">
+                                    <div class="icon-JPY icon-div"></div>
+                                    <div class="label">日圓</div>
+                                </div>
+                                 <div class="item " data-item="zar">
+                                    <div class="icon-ZAR icon-div"></div>
+                                    <div class="label">南非幣</div>
+                                </div>
+                                <div class="item " data-item="sek">
+                                    <div class="icon-SEK icon-div"></div>
+                                    <div class="label">瑞典</div>
+                                </div>
+                                <div class="item " data-item="nzd">
+                                    <div class="icon-NZD icon-div"></div>
+                                    <div class="label">紐元</div>
+                                </div>
+                                <div class="item " data-item="thb">
+                                    <div class="icon-THB icon-div"></div>
+                                    <div class="label">泰幣</div>
+                                </div>
+                                <div class="item " data-item="php">
+                                    <div class="icon-PHP icon-div"></div>
+                                    <div class="label">菲國比索</div>
+                                </div>
+                                <div class="item " data-item="idr">
+                                    <div class="icon-IDR icon-div"></div>
+                                    <div class="label">印尼幣</div>
+                                </div>
+                            
+                                <div class="item " data-item="eur">
+                                    <div class="icon-EUR icon-div"></div>
+                                    <div class="label">歐元</div>
+                                </div>
+                                <div class="item " data-item="krw">
+                                    <div class="icon-KRW icon-div"></div>
+                                    <div class="label">韓元</div>
+                                </div>
+                                <div class="item " data-item="vnd">
+                                    <div class="icon-VND icon-div"></div>
+                                    <div class="label">越南盾</div>
+                                </div>
+                                <div class="item " data-item="myr">
+                                    <div class="icon-MYR icon-div"></div>
+                                    <div class="label">馬來幣</div>
+                                </div>
+                                 <div class="item " data-item="cny">
+                                    <div class="icon-CNY icon-div"></div>
+                                    <div class="label">人民幣</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-8 col-md-offset-2">
+                       <div class="fresh-table full-color-red">
+                            <table id="fresh-table" class="table">
+                                <thead>
+                                    <th data-field="bankName">銀行</th>
+                                    <th data-field="cashbuy" data-sortable="true">現金買入</th>
+                                    <th data-field="cashsell" data-sortable="true">現金賣出</th>
+                                    <th data-field="bkbuy" data-sortable="true">即期買入</th>
+                                    <th data-field="bksell" data-sortable="true"">即期賣出</th>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center" style="display: none;">
+        <div class="row">
+            <div class="col-md-12">
+            <h2></h2>
+            <div class="container2">
+                <div class="navigation col-md-8">
+                    <ol>
+                        <li><a href="#"  data-ref="target">幣別</a></li>
+                        <li><a href="#"  data-ref="type">種類</a></li>
+                        <li><a href="#"  data-ref="compare">比較值</a></li>
+                        <li><a href="#"  data-ref="direction">基準</a></li>
+                        <li><a href="#"  data-ref="email">信箱</a></li>
+                    </ol>
+                </div>
+            <form id="sign-form" class="sign-form">
+                <ol class="questions">
+                    <li>
+                        <span><label for="target">您想追蹤的匯率?</label></span>
+               
+                        <div class="cov-inp-bx">
+                   
+                            <div class="col-md-12">
+                                <div class="conv-cont">
+                                
+                                    <select class="selectpicker active2" placeholder="Enter your full name" autofocus id="target" name="target">
+                                        <option value="uk" data-icon="gbp">GBP</option>
+                                        <option value="uk2" data-icon="pkr">GBP2</option>
+                                        <option value="uk3" data-icon="usd">GBP3</option>
+                                
+                                    </select>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <li>
+
+                        <span><label for="type">種類</label></span>
+                        <div class="cov-inp-bx">
+                   
+                            <div class="col-md-12">
+                                <div class="conv-cont">
+                                
+                                    <select id="type" name="type" class="selectpicker2" autofocus>
+                                        <option value="1">即期</option>
+                                        <option value="2">現鈔</option>
+                                
+                                    </select>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+
+                        <span><label for="compare">比較範圍</label></span>
+                        <div class="cov-inp-bx">
+                   
+                            <div class="col-md-12">
+                                <div class="conv-cont">
+                                
+                                    <select id="compare" name="compare" class="selectpicker2" autofocus>
+                                        <option value="大於等於">大於等於</option>
+                                        <option value="小於等於">小於等於</option>
+                                
+                                    </select>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span><label for="direction">比較基準</label></span>
+                        <input id="direction" name="direction" type="text" placeholder="請輸入正確數值"  autofocus/>
+                    </li>
+
+                    <li>
+                        <span><label for="email">請輸入電子信箱</label></span>
+                        <input id="email" name="email" type="text" placeholder="請輸入正確信箱"  autofocus/>
+                    </li>
+
+                    <li><p style="margin-top: 45px;font-size: 32pt;float:right">
+                        <a href="#" style="color:white;text-decoration:none" id="signup">送出</a></p>    </li>
+                
+                    
+                </ol>
+                <div id="next-page" alt="Kiwi standing on oval"></div>
+                <div class="error-message"></div>
+                
+            </form>
+        <h1 id="wf" style="opacity:0;width: 600px; margin-top:1.1em;display:none; margin-bottom:1em">Thank you</h1>
+      </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    
+    <section id="download" class="content-section text-center" style="display: none;">
+        <div class="download-section">
+            <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">服務項目</h2>
+            <hr class="primary">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-refresh text-primary sr-icons" style="color: white !important;"></i>
+              <h3>即時更新</h3>
+              <p class="text-muted" style="color: #eee;">即時為您更新匯率</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-paper-plane text-primary sr-icons" style="color: white !important;"></i>
+              <h3>到價通知</h3>
+              <p class="text-muted" style="color: #eee;">設定匯價到達後通知您</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 text-center">
+            <div class="service-box">
+              <i class="fa fa-4x fa-diamond text-primary sr-icons" style="color: white !important;"></i>
+              <h3>多平台支援</h3>
+              <p class="text-muted" style="color: #eee;">同步支援iOS/Android/Window</p>
+            </div>
+          </div>   
+        </div>
+      </div>
+   
+
+        </div>
+    </section>
+
+    
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Start Bootstrap</h2>
+                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+
+<!-- 聯絡我們 -->
+<!--     <div class="[ container text-center ]">
+    <div class="[ row ]">
+        <div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ]" role="tabpanel">
+            <div class="[ col-xs-4 col-sm-12 ]">
+     
+                <ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
+                    <li role="presentation" class="">
+                        <a href="#dustin" aria-controls="dustin" role="tab" data-toggle="tab">
+                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/dustinlamont/128.jpg">
+                            <span class="quote"><i class="fa fa-quote-left"></i></span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="active">
+                        <a href="#daksh" aria-controls="daksh" role="tab" data-toggle="tab">
+                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/dakshbhagya/128.jpg">
+                            <span class="quote"><i class="fa fa-quote-left"></i></span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="[ col-xs-8 col-sm-12 ]">
+                <div class="tab-content" id="tabs-collapse">            
+                    <div role="tabpanel" class="tab-pane fade" id="dustin">
+                        <div class="tab-inner">                    
+                            <p class="lead">Etiam tincidunt enim et pretium efficitur. Donec auctor leo sollicitudin eros iaculis sollicitudin.</p>
+                            <hr>
+                            <p><strong class="text-uppercase">Dustin Lamont</strong></p>
+                            <p><em class="text-capitalize"> Senior web developer</em> at <a href="#">Apple</a></p>                 
+                        </div>
+                    </div>
+                    
+                    <div role="tabpanel" class="tab-pane fade active in" id="daksh">
+                        <div class="tab-inner">
+                            <p class="lead">Suspendisse dictum gravida est, nec consequat tortor venenatis a. Suspendisse vitae venenatis sapien.</p>
+                            <hr>
+                            <p><strong class="text-uppercase">Daksh Bhagya</strong></p>
+                            <p><em class="text-capitalize"> UX designer</em> at <a href="#">Google</a></p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>        
+        </div>
+    </div>
+</div> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Exrate.info 2017</p>
+        </div>
+    </footer>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <script src="build/js/all.min.js"></script>
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+</body>
+</html>

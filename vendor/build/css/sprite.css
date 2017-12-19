@@ -1,0 +1,132 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-AUD {
+  background-image: url(sprite.png);
+  background-position: -55px 0px;
+  width: 50px;
+  height: 50px;
+}
+.icon-CAD {
+  background-image: url(sprite.png);
+  background-position: -165px 0px;
+  width: 50px;
+  height: 50px;
+}
+.icon-CHF {
+  background-image: url(sprite.png);
+  background-position: 0px -55px;
+  width: 50px;
+  height: 50px;
+}
+.icon-CNY {
+  background-image: url(sprite.png);
+  background-position: -55px -55px;
+  width: 50px;
+  height: 50px;
+}
+.icon-EUR {
+  background-image: url(sprite.png);
+  background-position: -110px 0px;
+  width: 50px;
+  height: 50px;
+}
+.icon-GBP {
+  background-image: url(sprite.png);
+  background-position: -110px -55px;
+  width: 50px;
+  height: 50px;
+}
+.icon-HKD {
+  background-image: url(sprite.png);
+  background-position: 0px -110px;
+  width: 50px;
+  height: 50px;
+}
+.icon-IDR {
+  background-image: url(sprite.png);
+  background-position: -55px -110px;
+  width: 50px;
+  height: 50px;
+}
+.icon-JPY {
+  background-image: url(sprite.png);
+  background-position: -110px -110px;
+  width: 50px;
+  height: 50px;
+}
+.icon-KRW {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 50px;
+  height: 50px;
+}
+.icon-MYR {
+  background-image: url(sprite.png);
+  background-position: -165px -55px;
+  width: 50px;
+  height: 50px;
+}
+.icon-NZD {
+  background-image: url(sprite.png);
+  background-position: -165px -110px;
+  width: 50px;
+  height: 50px;
+}
+.icon-PHP {
+  background-image: url(sprite.png);
+  background-position: 0px -165px;
+  width: 50px;
+  height: 50px;
+}
+.icon-SEK {
+  background-image: url(sprite.png);
+  background-position: -55px -165px;
+  width: 50px;
+  height: 50px;
+}
+.icon-SGD {
+  background-image: url(sprite.png);
+  background-position: -110px -165px;
+  width: 50px;
+  height: 50px;
+}
+.icon-THB {
+  background-image: url(sprite.png);
+  background-position: -165px -165px;
+  width: 50px;
+  height: 50px;
+}
+.icon-USD {
+  background-image: url(sprite.png);
+  background-position: -220px 0px;
+  width: 50px;
+  height: 50px;
+}
+.icon-VND {
+  background-image: url(sprite.png);
+  background-position: -220px -55px;
+  width: 50px;
+  height: 50px;
+}
+.icon-ZAR {
+  background-image: url(sprite.png);
+  background-position: -220px -110px;
+  width: 50px;
+  height: 50px;
+}
