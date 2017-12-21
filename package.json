@@ -5,9 +5,10 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build_mac": "electron-packager . MyApp --platform=darwin --arch=x64 --version=0.36.0 --icon=myapp.icns --asar=true --ignore=node_modules/electron-* ",
-    "build_win32": "electron-packager . MyApp --platform=win32 --arch=x64 --version=0.36.0 --icon=myapp.ico --asar=true --ignore=node_modules/electron-* ",
-    "build_linux": "electron-packager . MyApp --platform=linux --arch=x64 --version=0.36.0 --icon=myapp.png --asar=true --ignore=node_modules/electron-* "
+    "build": "electron-packager . Exrate --platform=darwin --arch=x64 --asar=true --ignore=\"vendor|node_modules|package-lock.json|assets|favicon.ico|.git|.gitignore|favicon.icns|favicon.png\" --icon=favicon.icns | electron-packager . Exrate --asar=true --platform=win32 --arch=x64 --ignore=\"vendor|node_modules|package-lock.json|assets|favicon.ico|.git|.gitignore|favicon.icns|favicon.png\" --icon=favicon.ico | electron-packager . Exrate --platform=linux --arch=x64 --ignore=\"vendor|node_modules|package-lock.json|assets|favicon.ico|.git|.gitignore|favicon.icns|favicon.png\" --icon=favicon.png --asar=true",
+    "build_mac": "electron-packager . Exrate --platform=darwin --arch=x64 --asar=true --ignore=\"vendor|node_modules|package-lock.json|assets|favicon.ico|.git|.gitignore|favicon.icns|favicon.png\" --icon=favicon.icns",
+    "build_win32": "electron-packager . Exrate --platform=win32 --arch=x64 --asar=true --ignore=\"vendor|node_modules|package-lock.json|assets|favicon.ico|.git|.gitignore|favicon.icns|favicon.png\" --icon=favicon.ico",
+    "build_linux": "electron-packager . Exrate --platform=linux --arch=x64 --asar=true --ignore=\"vendor|node_modules|package-lock.json|assets|favicon.ico|.git|.gitignore|favicon.icns|favicon.png\" --icon=favicon.png"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
