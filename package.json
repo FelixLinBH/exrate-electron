@@ -22,7 +22,8 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "1.7.10",
-    "electron-packager": "^10.1.0"
+    "electron-packager": "^10.1.0",
+    "electron-winstaller": "^2.6.3"
   },
   "dependencies": {
     "gulp": "^3.9.1",
